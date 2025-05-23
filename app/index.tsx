@@ -14,7 +14,7 @@ export default function HomeScreen() {
   useEffect(() => {
     const fetchData = () => {
       axios
-        .get("http://localhost:5000/api/data")
+        .get("https://backend-90l2.onrender.com/api/data")
         .then((res) => {
           setData(res.data);
         })
